@@ -279,6 +279,10 @@ function buildJavascript() {
   return buildGenerator('javascript', 'JavaScript');
 };
 
+function buildRego() {
+  return buildGenerator('rego', 'Rego')
+}
+
 /**
  * This task builds the python generator.
  *     python_compressed.js
@@ -324,7 +328,8 @@ const buildGenerators = gulp.parallel(
   buildPython,
   buildPHP,
   buildLua,
-  buildDart
+  buildDart,
+  buildRego
 );
 
 /**
